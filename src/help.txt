@@ -1,0 +1,8 @@
+This program calculates average request duration for every resource based on a log file, prints out top n of them, and draws a histogram of hourly number of requests.
+
+Usage: java -jar test.jar <file> <n>
+where
+	<file>	log file containing request durations
+		Log file has a format of (date timestamp (thread-id) [optional user context] URI+queryString "in" requestDuration) or	(date timestamp (thread-id) [optional user context] resourceName dataPayload "in" requestDuration), where elements are separated with space.
+
+	<n>	number of resources printed out
